@@ -1,0 +1,12 @@
+.card{
+    width:0px;
+    height:330px;
+    background-color:white;
+    padding-top:10px;
+}
+.start-booking{
+    width:100%;
+    margin-top:30px;
+    background-color:goldenrod;
+    padding:2px;
+}

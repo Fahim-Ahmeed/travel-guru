@@ -1,0 +1,16 @@
+.container{
+    padding-top:100px;
+}
+.place{
+    margin-right: 0px;
+    padding-right: 0px;
+}
+.name{
+    color:white;
+}
+.booking-button{
+    width:100px;
+    border-radius:5px ;
+    background-color: goldenrod;
+
+}

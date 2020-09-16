@@ -1,0 +1,28 @@
+.navbar{
+   padding-top:30px;
+}
+.navbar-item{
+    margin-left: 20px;
+    text-decoration: none;
+   
+    
+}
+.link{
+  text-decoration: none; 
+ 
+}
+.link{
+    color:black;
+}
+button{
+    width:70px;
+    border-radius:5px ;
+    background-color: goldenrod;
+
+}
+.logo{
+    width:100px;
+    height:50px;
+    filter:brightness(800%);
+    margin-left:50px;
+}
