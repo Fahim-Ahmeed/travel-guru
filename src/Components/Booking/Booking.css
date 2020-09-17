@@ -10,3 +10,7 @@
     background-color:goldenrod;
     padding:2px;
 }
+.booking-body{
+    background-image:url(../../fakeData/Rectangle\ 1.png);
+    height: 700px;
+}

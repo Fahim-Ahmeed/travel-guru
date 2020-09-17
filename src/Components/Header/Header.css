@@ -1,8 +1,11 @@
 .navbar{
    padding-top:30px;
+   padding-right: 100px;
+   
 }
 .navbar-item{
     margin-left: 20px;
+ 
     text-decoration: none;
    
     
@@ -23,6 +26,6 @@ button{
 .logo{
     width:100px;
     height:50px;
-    filter:brightness(800%);
+  
     margin-left:50px;
 }

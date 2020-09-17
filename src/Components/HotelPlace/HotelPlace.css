@@ -1,0 +1,7 @@
+.container-body{
+    border-top: 1px solid lightgrey;
+}
+.map-area{
+    border:1px solid lightgrey;
+    border-radius:5px;
+}
