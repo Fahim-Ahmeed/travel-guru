@@ -13,12 +13,18 @@ import Create from './Components/Create/Create';
 import Login from './Components/Login/Login';
 import HotelPlace from './Components/HotelPlace/HotelPlace';
 export const DestinationContext=createContext()
+export const UserIdentity=createContext()
 
 function App() {
-  const[destination,setDestination]=useState({})
+  const [isSignedIn,setIsSignIn]=useState({
+        isSignIn:false,
+        name: '',
+        email: '',
+  });
+  const[destination,setDestination]=useState({});
   // const[location,setLocation]=useState({})
   return (
-    
+    <UserIdentity.Provider value={[isSignedIn,setIsSignIn]}>
     <DestinationContext.Provider value={[destination,setDestination]}>
      
     <Router>
@@ -47,6 +53,7 @@ function App() {
       </Switch>
     </Router>
     </DestinationContext.Provider>
+    </UserIdentity.Provider>
    
   
   );

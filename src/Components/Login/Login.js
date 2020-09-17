@@ -1,10 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import firebaseConfig from '../Create/firebase.config';
 import Header from '../Header/Header';
 
 const Login = () => {
+   
     return (
-        <div className="login-body">
+        <div Name="login-body">
             <Header></Header>
             <div className="container ">
                 <div className="row">
