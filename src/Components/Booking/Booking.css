@@ -4,13 +4,13 @@
     background-color:white;
     padding-top:10px;
 }
-.start-booking{
-    width:100%;
-    margin-top:30px;
-    background-color:goldenrod;
-    padding:2px;
-}
+
 .booking-body{
-    background-image:url(../../fakeData/Rectangle\ 1.png);
-    height: 700px;
+    /* background-image:url(../../fakeData/Rectangle\ 1.png); */
+    /* height: 700px; */
+    background-image:    url(../../fakeData/Rectangle\ 1.png);
+    background-size:     cover;                     
+    background-repeat:   no-repeat;
+    background-position: center center; 
+    /* padding: 20px;  */
 }

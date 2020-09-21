@@ -99,7 +99,7 @@ const travelDocument=[
             {
                 title: 'Excellent scenic beauty all around this High ground.',
                 price:140,
-                image:'https://imgur.com/V5rFtrB',
+                image:'https://i.imgur.com/V5rFtrB.png',
                 rating:'4.5(19)',
                 details:{
                     guests:4,
@@ -112,7 +112,7 @@ const travelDocument=[
             {
                 title: 'Equipped with all modern state of the art amenities and facilities',
                 price:140,
-                image:'https://imgur.com/WsCYu0K',
+                image:'https://i.imgur.com/WsCYu0K.png',
                 rating:'4.5(19)',
                 details:{
                     guests:4,
@@ -125,7 +125,7 @@ const travelDocument=[
             {
                 title: 'This resort is the true combination of ultimate luxury.',
                 price:140,
-                image:'https://imgur.com/vFsRfwi',
+                image:'https://i.imgur.com/vFsRfwi.png',
                 rating:'3.99(50)',
                 details:{
                     guests:4,

@@ -9,19 +9,28 @@ import {
 } from "react-router-dom";
 import Home from './Components/Home/Home';
 import Booking from './Components/Booking/Booking';
-import Create from './Components/Create/Create';
 import Login from './Components/Login/Login';
 import HotelPlace from './Components/HotelPlace/HotelPlace';
+import PrivateRoute from './Components/PrivateRoute/PrivateRoute';
 export const DestinationContext=createContext()
 export const UserIdentity=createContext()
 
 function App() {
   const [isSignedIn,setIsSignIn]=useState({
-        isSignIn:false,
-        name: '',
+        firstName: '',
+        lastName: '',
         email: '',
+        password: '',
+        confirmPassword: '',
+        error: '',
+        success: ''
   });
-  const[destination,setDestination]=useState({});
+  const[destination,setDestination]=useState({
+    origin:'',
+    destination:'',
+    from:'',
+    to:''
+  });
   // const[location,setLocation]=useState({})
   return (
     <UserIdentity.Provider value={[isSignedIn,setIsSignIn]}>
@@ -35,15 +44,12 @@ function App() {
         <Route path="/booking">
         <Booking></Booking>
         </Route>
-        <Route path="/create">
-       <Create></Create>
-        </Route>
         <Route path="/login">
        <Login></Login>
         </Route>
-        <Route path="/place">
+        <PrivateRoute path="/place">
        <HotelPlace></HotelPlace>
-        </Route>
+        </PrivateRoute>
         <Route  path="/">
         <Home></Home>
         </Route>

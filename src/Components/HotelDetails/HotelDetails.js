@@ -5,7 +5,6 @@ const HotelDetails = (props) => {
     // console.log(props.hotel)
     const { details, image, price, rating, title, unique } = props.hotel;
     const { guests, bedroms, beds, baths } = details;
-    console.log(guests, bedroms, beds, baths, image, price, rating, title, unique,)
     return (
         <div classNameName="details-area">
             <div className="container">

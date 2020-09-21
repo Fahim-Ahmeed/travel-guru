@@ -4,15 +4,16 @@ import MainPage from '../../fakeData/MainPage/MainPage';
 import travelDocument from '../../fakeData/travelDocuments';
 import Booking from '../Booking/Booking';
 import { useContext } from 'react';
-
-
-
-
-
 import Header from '../Header/Header';
 // import Details from './Details/Details';
 import './Home.css';
 import { DestinationContext } from '../../App';
+//carousel   
+
+
+
+
+
 
 
 
@@ -42,7 +43,7 @@ const Home = () => {
             <Header></Header>
             <div className="container">
                 <div className="row">
-                    <div className="col">
+                    <div className="col col-sm-6">
                         <h2 className="name">{name}</h2>
                         <h5 className="name">{description}</h5>
                         <Link to="/booking">
@@ -50,30 +51,32 @@ const Home = () => {
                         </Link>
 
                     </div>
-                    <div className="col place">
-                        <div className="card-group">
-                            <div className="card">
+                    <div className="col col-sm-6 place">
+        
+                    <div className="card-group">
+                            <div className="card col-sm-12">
                                 <div classNameName="card-body" onMouseMove={() => { handleMouseMove(coxBazar.name) }}>
                                     <img src={coxBazar.image} className="card-img" alt="..." />
                                     <h5>{coxBazar.name}</h5>
                                 </div>
                             </div>
-                            <div className="card">
+                            <div className="card col-sm-12">
                                 <div classNameName="card-body" onMouseMove={() => { handleMouseMove(sreemangal.name) }}>
-                                    <img src={sreemangal.image} className="card-img" alt="..." />
+                                    <img src={sreemangal.image} className=" img-fluid" alt="..." />
                                     <h5>{sreemangal.name}</h5>
                                 </div>
                             </div>
-                            <div className="card">
+                            <div className="card col-sm-12">
                                 <div classNameName="card-body" onMouseMove={() => { handleMouseMove(sundarban.name) }}>
                                     <img src={sundarban.image} className="card-img" alt="..." />
                                     <h5>{sundarban.name}</h5>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
+
+        </div>
+        </div>
+        </div>
         </div>
     );
 };
