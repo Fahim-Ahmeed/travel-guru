@@ -23,6 +23,8 @@ const HotelDetails = (props) => {
                 </div>
             </div>
         </div>
+        
+       
     );
 };
 
