@@ -5,7 +5,6 @@ import travelDocument from '../../fakeData/travelDocuments';
 import Booking from '../Booking/Booking';
 import { useContext } from 'react';
 import Header from '../Header/Header';
-// import Details from './Details/Details';
 import './Home.css';
 import { DestinationContext } from '../../App';
 //carousel   
@@ -34,7 +33,7 @@ const Home = () => {
     }, [item])
 
     const { name, description } = destination;
-    console.log(name, description)
+  
 
 
     const [coxBazar, sreemangal, sundarban] = location;
@@ -52,8 +51,8 @@ const Home = () => {
 
                     </div>
                     <div className="col col-sm-6 place">
-        
-                    <div className="card-group">
+
+                        <div className="card-group">
                             <div className="card col-sm-12">
                                 <div classNameName="card-body" onMouseMove={() => { handleMouseMove(coxBazar.name) }}>
                                     <img src={coxBazar.image} className="card-img" alt="..." />
@@ -74,9 +73,9 @@ const Home = () => {
                             </div>
                         </div>
 
-        </div>
-        </div>
-        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     );
 };

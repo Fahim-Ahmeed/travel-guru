@@ -23,7 +23,13 @@ button{
     background-color: goldenrod;
 
 }
-.logo{
+.black{
+    width:100px;
+    height:50px;
+    margin-left:50px;
+}
+.white{
+    filter:brightness(800%);
     width:100px;
     height:50px;
   

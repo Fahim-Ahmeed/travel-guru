@@ -24,7 +24,7 @@ const Login = () => {
             .then(res => {
                 const { email, displayName } = res.user;
                 const logInUser = {
-                    name: displayName,
+                    displayName: displayName,
                     email: email,
                     success:true,
                     error:false
@@ -49,7 +49,7 @@ const Login = () => {
                 const { email, displayName } = res.user;
                 const logInUser = {
                     isSignIn: true,
-                    name: displayName,
+                    displayName: displayName,
                     email: email,
                     success:true,
                     error:false
@@ -112,6 +112,7 @@ const Login = () => {
                     const newUser = { ...isSignedIn }
                     newUser.error = false;
                     newUser.success = true;
+                    newUser.displayName=res.user.displayName;
                     setIsSignIn(newUser);
                     history.replace(from);
                     setUserInfo(isSignedIn.firstName,isSignedIn.lastName)
@@ -148,6 +149,7 @@ const Login = () => {
                 const newUser = { ...isSignedIn }
                 newUser.error = false;
                 newUser.success = true;
+                newUser.displayName=res.user.displayName;
                 setIsSignIn(newUser);
                 history.replace(from);
             })

@@ -38,5 +38,7 @@
 } */
 .body{
   background-image:url(../src/fakeData/Rectangle\ 1.png);
-  height:630px;
+  background-size:     cover;                     
+  background-repeat:   no-repeat;
+  background-position: center center; 
 }

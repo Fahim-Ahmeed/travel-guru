@@ -1,6 +1,7 @@
 import React, { createContext, useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
+
 import {
   BrowserRouter as Router,
   Switch,
@@ -12,13 +13,15 @@ import Booking from './Components/Booking/Booking';
 import Login from './Components/Login/Login';
 import HotelPlace from './Components/HotelPlace/HotelPlace';
 import PrivateRoute from './Components/PrivateRoute/PrivateRoute';
+
 export const DestinationContext=createContext()
 export const UserIdentity=createContext()
 
 function App() {
   const [isSignedIn,setIsSignIn]=useState({
-        firstName: '',
+        firstName:false,
         lastName: '',
+        displayName: '',
         email: '',
         password: '',
         confirmPassword: '',
@@ -33,6 +36,7 @@ function App() {
   });
   // const[location,setLocation]=useState({})
   return (
+    <div className="m-body">
     <UserIdentity.Provider value={[isSignedIn,setIsSignIn]}>
     <DestinationContext.Provider value={[destination,setDestination]}>
      
@@ -60,6 +64,7 @@ function App() {
     </Router>
     </DestinationContext.Provider>
     </UserIdentity.Provider>
+    </div>
    
   
   );

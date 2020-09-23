@@ -9,7 +9,7 @@ const HotelDetails = (props) => {
         <div classNameName="details-area">
             <div className="container">
                 <div className="row">
-                    <div className="col">
+                    <div className="col container-fluid">
                         <img src={image} className="img-fluid" alt="" />
                     </div>
                     <div className="col">
