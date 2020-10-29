@@ -1,7 +1,7 @@
 
 
 ### Travel Guru
-<img align="left" alt="fahim-ahmed| YouTube"  src="https://i.imgur.com/MULIdI9.png" />
+<img align="left" alt="fahim-ahmed| YouTube"  src="blob:https://imgur.com/fa8b62fa-96be-4d13-8e03-9a18962994c3" />
 <br/>
 <br/>
 
